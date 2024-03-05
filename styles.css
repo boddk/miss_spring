@@ -11,10 +11,13 @@ body {
   align-items: center;
 }
 .container {
-  width: 40em;
+  width: fit-content;
   margin: 1em;
   padding: 1em;
   height: center;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
   background: #f2fbff7a;
   border-radius: 3em;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -40,26 +43,58 @@ body {
 }
 @media (max-width: 768px) {
   p {
-    font-size: 16px;
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  .container {
+    max-width: 95%;
+    min-width: 95%;
+  }
+}
+@media (max-width: 444px) {
+  iframe {
+    height: 10em;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   p {
-    font-size: 18px;
+    font-size: 1.7em;
+  }
+  h1 {
+    font-size: 2.2em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  .container {
+    max-width: 75%;
+    min-width: 75%;
   }
 }
 
 @media (min-width: 1024px) {
   p {
-    font-size: 20px;
+    font-size: 1.5em;
+  }
+  h1 {
+    font-size: 2.2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .container {
+    max-width: 50%;
+    min-width: 50%;
   }
 }
 .border {
   border-radius: 30px;
 }
 img {
-  width: 85%;
+  width: 90%;
   border-radius: 30px;
   margin-bottom: 1.5em;
   box-shadow: rgba(0, 0, 0, 0.178) 0 4px 30px;
