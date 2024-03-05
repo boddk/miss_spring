@@ -13,6 +13,7 @@ body {
 .container {
   width: fit-content;
   margin: 1em;
+  z-index: 103;
   padding: 1em;
   height: center;
   display: flexbox;
